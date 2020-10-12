@@ -1,0 +1,53 @@
+/*
+#FFD700 Химия
+ rgb(57, 153, 255);Английский
+ #00FF00;Военное дело
+*/
+
+#sidebarMenu{
+    position: fixed;
+    height: 100%;
+}
+
+.container{
+    width: 70%;
+    margin-right: 5%;
+    padding-top: 2%;
+    background-color: rgb(250, 250, 250);
+}
+.logo{
+    background-color: rgb(57, 153, 255);
+}
+.logo_text{
+    color: black;
+
+}
+.logo_walnut{
+    font-size: 20px;
+}
+.intro_text{
+    font-size: 16px;
+}
+
+.info_txt{
+    font-size: 34px;
+    opacity: 80%;
+}
+.carousel-item{
+    height: 340px;
+   
+}
+.card-image{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+.card{
+    height: auto;
+    border-color: red;
+}
+.card_info{
+    margin: 30px;
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Walnut</title>
+  </head>
+  <body>
+    <nav
+      id="sidebarMenu"
+      class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+    >
+    <div
+        class="logo d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm"
+      >
+        <img
+          class="mr-3"
+          src="img/logo2.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <div class="lh-100 logo_text">
+          <h6 class="logo_walnut mb-0 lh-100" _msthash="672204" _msttexthash="138918">
+            Walnut
+          </h6>
+          <small _msthash="520793" _msttexthash="876486">С 2020 года</small>
+        </div>
+      </div>
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#anatomi">
+              <svg
+               width="24"
+                height="24"
+                 viewBox="0 0 15 15" 
+                 class="bi bi-person" 
+                 fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                <path 
+                fill-rule="evenodd"
+                 d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+              Анатомия <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chemistry">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file"
+              >
+                <path
+                  d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                ></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+              </svg>
+              Химия
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#voen">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              Военное дело
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#socil">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-bar-chart-2"
+              >
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              Социология
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#eng">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-layers"
+              >
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Английский
+            </a>
+          </li>
+        </ul>
+
+        <h6
+          class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+        >
+          <span>Дополнительные <br>материалы</span>
+          <a
+            class="d-flex align-items-center text-muted"
+            href="#"
+            aria-label="Add a new report"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus-circle"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Шпоргалки
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Формулы
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Словарик
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Справочник
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+     
+      
+<div class="" style="margin: 5px;"></div>
+
+      <section class="main_slider">
+        <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img " width="100%" height="100%"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="red"></rect></svg>
+              <div class="container" >
+                <div class="carousel-caption text-left">
+                  <h1>Анатомия.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                 
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill=" rgb(57, 153, 255)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Английский.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                 
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#00FF00"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Военное дело.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                 
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#FFD700"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption text-right">
+                  <h1>Химия.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <div class="" style="margin: 20px;"></div>
+
+      <section class="about_proj">
+        <div class="my-2 p-3 bg-white rounded shadow-sm">
+          <h6
+            class="border-bottom border-gray pb-2 mb-0" 
+            style="font-size: 20px;"
+            _msthash="457847"
+            _msttexthash="4276883"
+          >
+            Приложение для обучения
+          </h6>
+          <div class="media text-muted pt-2">
+            <svg
+              class="bd-placeholder-img mr-2 rounded"
+              width="32"
+              height="32"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Заполнитель: 32x32"
+              _mstaria-label="1959997"
+            >
+              <title _mstHash="753623" _mstTextHash="177515" _mstHidden="1">
+                Placeholder
+              </title>
+              <rect width="100%" height="100%" fill="#007bff"></rect>
+              <text
+                x="50%"
+                y="50%"
+                fill="#007bff"
+                dy=".3em"
+                _mstHash="1092936"
+                _mstTextHash="37661"
+              >
+                32x32
+              </text>
+            </svg>
+            <p
+              class=" intro_text media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+            >
+              <strong
+                class="d-block text-gray-dark"
+                _msthash="1091974"
+                _msttexthash="133965"
+                >@Walnut </strong
+              ><font _mstmutation="1" _msthash="651326" _msttexthash="14434433">
+                Walnut - помощник в учёбе!<br> Приложение по нескольким школьным предметам.
+                Для вас собраны материала по различным темам в целях сподвичь
+                вашему успешному обучению.Скорей начни обучение вместе с нами!
+              </font>
+            </p>
+            
+          </div>
+        </div>
+        
+      </section>
+     
+      <section class="info">
+        
+<div class="" style="margin: 20px;"></div>
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
+                <h3 class="mb-0">Анатомия</h3>
+                <p class="card-text mb-auto">А ты знал, что так же, как и отпечатки ваших пальцев, отпечаток языка является уникальным.</p>
+                <a href="#anatomi" class="stretched-link">Узнать больше</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="red"></rect><text class="info_txt" x="8%" y="50%" fill="#eceeef" dy=".4em">Анатомия</text></svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
+                <h3 class="mb-0">Химия</h3>
+                <p class="mb-auto">А ты знал, что буква J - единственная буква, которой нет в периодической таблице менделеева.</p>
+                <a href="#chemistry" class="stretched-link">Узнать больше</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#FFD700"></rect><text class="info_txt" x="8%" y="50%" fill="#eceeef" dy=".4em">Химия</text></svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
+                <h3 class="mb-0">Английский</h3>
+                <p class="card-text mb-auto">А ты знал, что "Go!" - это самое короткое грамматически верное английское предложение..</p>
+                <a href="#eng" class="stretched-link">Узнать больше</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill=" rgb(57, 153, 255)"></rect><text class="info_txt" x="8%" y="50%" fill="#eceeef" dy=".5em">Английский</text></svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
+                <h3 class="mb-0">Военное</h3>
+                <p class="mb-auto">А ты знал, что В 1896 году случилась война, длившаяся ровно 38 минут.</p>
+                <a href="#voen" class="stretched-link">Узнать больше</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#00FF00"></rect><text class="info_txt" x="8%" y="50%" fill="#eceeef" dy=".4em">Военное</text></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      
+      <section class="anatomi" id="anatomi">
+        <div class="card mb-4 shadow-sm card_anat">
+          <div class="card-header" style="background-color: red;">
+            <h4 class="my-0 font-weight-normal" style="color: white;">Анатомия</h4>
+          </div>
+           <div class="card_info">
+             <img src="img/organ-anatomy.jpg" alt="organ-anatomy" width="80%" height="50%">
+            <div class="test" style="color: rgb(145, 145, 145);">
+              <form  name="quiz" class="quiz" id="quiz" action="javascript:check();">
+                <h4 class="my-0 font-weight-normal">Что изображено на картинке? </h4>
+                <img src="img/test_anatom.jpg" alt=""><br>
+                <input name="vopros1" checked="checked" value="no" id="value1" type="radio"> Сонная артерия  <br>
+                <input name="vopros1" value="yes" id="value2" type="radio"> Сердечная мышца <br>
+                <input name="vopros1" value="no" id="value3" type="radio"> Поджелудочная железа <br>
+                <input name="vopros1" value="nо" id="value4" type="radio"> Житавидная железа <br>
+                
+                <h4 class="my-0 font-weight-normal"> Под какой цифрой обозначены ПОЧКИ</h4>
+                <img src="img/test_anatom_2.png" alt=""><br>
+                <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 <br>
+                <input name="vopros2" value="no" id="value2" type="radio"> 2 <br>
+                <input name="vopros2" value="no" id="value3" type="radio">  3 <br>
+                <input name="vopros2" value="yes" id="value4" type="radio">  4 <br>
+                
+                <h4 class="my-0 font-weight-normal">Чего из перечисленного нет на картинке?</h4>
+                <img src="img/test_anatom_3.jpg" alt=""><br>
+                <input name="vopros3" checked="checked" value="no" id="value1" type="radio">Глаз <br>
+                <input name="vopros3" value="yes" id="value2" type="radio">Сердце <br>
+                <input name="vopros3" value="no" id="value3" type="radio"> Зуб <br>
+                <input name="vopros3" value="nо" id="value4" type="radio"> Мозг <br>
+                <br>
+                <input value="Проверить" type="submit" placeholder="Проверить" style="border: 2px solid  rgb(255, 0, 0); border-radius: 5px; margin: 0 15%; width: 65%; background-color: rgba(255, 0, 0, 0.849);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;">
+              </form>
+            </div>
+           </div>
+        </div>
+      </section>
+
+     <section class="eng" id="eng">
+        <div class="card mb-4 shadow-sm" style="border-color: rgb(57, 153, 255);">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal" style="color: rgb(57, 153, 255);">Английский</h4>
+          </div>
+            <div class="card_info">
+
+            </div>
+        </div>
+      </section>
+
+      <section class="chemistry" id="chemistry">
+        <div class="card mb-4 shadow-sm card_him" style="border-color: #FFD700;">
+          <div class="card-header"style="background-color: #FFD700;">
+            <h4 class="my-0 font-weight-normal" style="color: #ffffff;">Химия</h4>
+          </div>
+          <div class="card_info">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="voen" id="voen">
+        <div class="card mb-4 shadow-sm card_voe" style="border-color: #00FF00;">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal" style="color: #00FF00;">Военное дело</h4>
+          </div>
+          <div class="card_info">
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function check()
+      {
+      var yes=0;
+      var no=0;
+      var otvet="";
+      var choice;
+      for (var v=1; v<=3; v++)
+      {
+      var q = document.forms['quiz'].elements['vopros'+v];
+       for (var i=0; i<q.length; i++)
+       {
+       if (q[i].checked) {
+       choice=q[i].value;
+       }
+       }
+       if (choice=="yes") {yes++;}
+       if (choice=="no") {no++;}
+      }
+      switch (true) {
+      case (yes<2): otvet="оценка 3";break;
+      case (yes==2): otvet="оценка 4";break;
+      case (yes>2): otvet="оценка 5";break;
+      default: otvet="очень плохо";break;
+      }
+      alert(otvet);
+      }
+     </script>
+  </body>
+</html>
