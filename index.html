@@ -512,7 +512,20 @@
             <h4 class="my-0 font-weight-normal" style="color: rgb(57, 153, 255);">Английский</h4>
           </div>
             <div class="card_info">
-
+              <div class="puzzle">
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+            </div>
+            <p>Собери слово "дом" из фрагментов:</p>
+            <div class="images">
+                <img id="slice_0_0" draggable="true" src="img/slice_0_0.jpg">
+                <img id="slice_0_1" draggable="true" src="img/slice_0_1.jpg">
+                <img id="slice_0_2" draggable="true" src="img/slice_0_2.jpg">
+                <img id="slice_0_3" draggable="true" src="img/slice_0_3.jpg">
             </div>
         </div>
       </section>
@@ -584,6 +597,33 @@
       }
       alert(otvet);
       }
+      {
+      const dragstart = function(event) {
+        event.dataTransfer.setData("text", event.target.id);
+      };
+      const dragover = function(event) {
+        if(event.target.nodeName.toLowerCase() === "img") {
+          return true;
+        }
+        event.preventDefault();
+      }
+      const drop = function(event) {
+        event.preventDefault();
+        let imageId = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(imageId));
+      };
+
+      const cells = document.getElementsByClassName("col");
+      Array.from(cells).forEach((element) => {
+        element.addEventListener('dragover',dragover);
+        element.addEventListener('drop',drop);
+      });      
+
+      const images = document.getElementsByTagName("img");
+      Array.from(images).forEach((element) => {
+        element.addEventListener('dragstart',dragstart);
+      });
+    }
      </script>
   </body>
 </html>
