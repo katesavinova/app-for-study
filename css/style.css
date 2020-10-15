@@ -2,64 +2,92 @@
 #FFD700 Химия
  rgb(57, 153, 255);Английский
  #00FF00;Военное дело
+ серый #bbc3c8
+ темно серый 75797a
 */
 
-#sidebarMenu{
-    position: fixed;
-    height: 100%;
+#sidebarMenu {
+  position: fixed;
+  height: 100%;
 }
 
-.container{
-    width: 70%;
-    margin-right: 5%;
-    padding-top: 2%;
-    background-color: rgb(250, 250, 250);
+.container {
+  width: 70%;
+  margin-right: 5%;
+  padding-top: 2%;
+  background-color: rgb(250, 250, 250);
 }
-.logo{
-    background-color: rgb(57, 153, 255);
+.logo {
+  background-color: rgb(57, 153, 255);
 }
-.logo_text{
-    color: black;
-
+.logo_text {
+  color: black;
 }
-.logo_walnut{
-    font-size: 20px;
+.logo_walnut {
+  font-size: 20px;
 }
-.intro_text{
-    font-size: 16px;
+.intro_text {
+  font-size: 16px;
 }
-
-.info_txt{
-    font-size: 34px;
-    opacity: 80%;
+.quiz{
+    display: flex;
 }
-.carousel-item{
-    height: 340px;
-   
+.info_txt {
+  font-size: 34px;
+  opacity: 80%;
 }
-.card-image{
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    opacity: 50%;
+.carousel-item {
+  height: 340px;
 }
-.card{
-    height: auto;
-    border-color: red;
+.card-image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 50%;
 }
-.card_info{
-    margin: 30px;
+.card {
+  height: auto;
+  border-color: red;
+}
+.card_info {
+  margin: 30px;
 }
 .rowP {
-    display: flex;
-    height: 200px;
-  }
-  .col {
-    width: 200px;
-    border: 1px solid #000;
-  }
-  .images img {
-    width: 100px;
-    border: 1px solid #000;
-  }
+  display: flex;
+  height: 200px;
+}
+.col {
+  width: 200px;
+  border: 1px solid #000;
+}
+.images{
+    margin-bottom: 5%;
+}
+.images img {
+  width: 100px;
+  border: 1px solid #000;
+}
+
+input[type="text"] {
+  padding: 5px 10px;
+  margin: 0 1%;
+  font-size: 20px;
+  border: 4px solid#bbc3c886;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px;
+  outline: none;
+  color: #bbc3c8;
+  width: 70%;
+}
+.parStyle {
+  color: #75797a;
+  font-family: ‘Verdana’, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 5px;
+}
+.formWord{
+    background-color: rgb(245, 245, 245);
+    padding: 2%;   
+}

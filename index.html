@@ -475,32 +475,38 @@
               <h4 class="my-0 font-weight-normal" style="color: white;">Анатомия</h4>
             </div>
             <div class="card_info">
-              <img src="img/organ-anatomy.jpg" alt="organ-anatomy" width="80%" height="50%">
+              <img src="img/organ-anatomy.jpg" alt="organ-anatomy" width="60%"  style="margin: 0 15%;">
               <div class="test" style="color: rgb(145, 145, 145);">
                 <form  name="quiz" class="quiz" id="quiz" action="javascript:check();">
-                  <h4 class="my-0 font-weight-normal">Что изображено на картинке? </h4>
+                 <div class="">
+                  <p class="my-0 font-weight-normal">Что изображено на картинке? </p>
                   <img src="img/test_anatom.jpg" alt=""><br>
                   <input name="vopros1" checked="checked" value="no" id="value1" type="radio"> Сонная артерия  <br>
                   <input name="vopros1" value="yes" id="value2" type="radio"> Сердечная мышца <br>
                   <input name="vopros1" value="no" id="value3" type="radio"> Поджелудочная железа <br>
                   <input name="vopros1" value="nо" id="value4" type="radio"> Житавидная железа <br>
+                 </div>
                   
-                  <h4 class="my-0 font-weight-normal"> Под какой цифрой обозначены ПОЧКИ</h4>
+                 <div class=""> <p class="my-0 font-weight-normal"> Под какой цифрой обозначены ПОЧКИ?</p>
                   <img src="img/test_anatom_2.png" alt=""><br>
-                  <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 <br>
+                  <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 
                   <input name="vopros2" value="no" id="value2" type="radio"> 2 <br>
-                  <input name="vopros2" value="no" id="value3" type="radio">  3 <br>
-                  <input name="vopros2" value="yes" id="value4" type="radio">  4 <br>
+                  <input name="vopros2" value="no" id="value3" type="radio">  3
+                  <input name="vopros2" value="yes" id="value4" type="radio">  4 
+                </div>
                   
-                  <h4 class="my-0 font-weight-normal">Чего из перечисленного нет на картинке?</h4>
+                 <div class="">
+                  <p class="my-0 font-weight-normal">Чего из перечисленного нет на картинке?</p>
                   <img src="img/test_anatom_3.jpg" alt=""><br>
                   <input name="vopros3" checked="checked" value="no" id="value1" type="radio">Глаз <br>
                   <input name="vopros3" value="yes" id="value2" type="radio">Сердце <br>
                   <input name="vopros3" value="no" id="value3" type="radio"> Зуб <br>
                   <input name="vopros3" value="nо" id="value4" type="radio"> Мозг <br>
                   <br>
-                  <input value="Проверить" type="submit" placeholder="Проверить" style="border: 2px solid  rgb(255, 0, 0); border-radius: 5px; margin: 0 15%; width: 65%; background-color: rgba(255, 0, 0, 0.849);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;">
-                </form>
+                
+                  <input value="Проверить" type="submit" placeholder="Проверить" style="border: 2px solid  rgb(255, 0, 0); border-radius: 5px; margin: 0; width: 100%; background-color: rgba(255, 0, 0, 0.849);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;">
+                </div>
+              </form>
               </div>
             </div>
           </div>
@@ -520,13 +526,31 @@
                   <div class="col"></div>
                 </div>
             </div>
-            <p>Собери слово "дом" из фрагментов:</p>
+            <p class="parStyle">Собери слово "дом" из фрагментов:</p>
             <div class="images">
                 <img id="slice_0_0" draggable="true" src="img/slice_0_0.jpg">
                 <img id="slice_0_1" draggable="true" src="img/slice_0_1.jpg">
                 <img id="slice_0_2" draggable="true" src="img/slice_0_2.jpg">
                 <img id="slice_0_3" draggable="true" src="img/slice_0_3.jpg">
             </div>
+
+           <div class="formWord">
+            <p class="parStyle">Как перевести слово "dog" на русский(в женском роде)?</p>
+            <form action="">
+              <input type="text" id="EngWord" placeholder="Ваш ответ" />
+              <input type="button" onclick="Submit()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
+            </form>
+            <p class="parStyle">Как перевести слово "cat" на русский(в женском роде)?</p>
+            <form action="">
+              <input type="text" id="EngWord2" placeholder="Ваш ответ" />
+              <input type="button" onclick="Submit2()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
+            </form>
+            <p class="parStyle">Как перевести слово "red" на русский?</p>
+            <form action="">
+              <input type="text" id="EngWord3" placeholder="Ваш ответ" />
+              <input type="button" onclick="Submit3()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
+            </form>
+           </div>
         </div>
       </section>
 
@@ -623,6 +647,35 @@
       Array.from(images).forEach((element) => {
         element.addEventListener('dragstart',dragstart);
       });
+    }
+    {
+      function Submit(){
+        if((document.getElementById('EngWord').value)=="Собака") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
+        
+      }
+      function Submit2(){
+        if((document.getElementById('EngWord2').value)=="Кошка") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
+      }
+      function Submit3(){
+        if((document.getElementById('EngWord3').value)=="Красный") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
+        
+        
+      }
     }
      </script>
   </body>
