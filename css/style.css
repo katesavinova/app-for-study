@@ -55,18 +55,24 @@
   margin: 30px;
 }
 .rowP {
-  display: flex;
-  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr 1fr;
+  height: 350px;
 }
-.col {
-  width: 200px;
-  border: 1px solid #000;
+
+.Acol {
+ 
+  width: 65%;
+  margin: 2%;
+  border: 2px solid rgb(57, 153, 255);
+  background-color: rgb(245, 245, 245);
+  border-radius: 5%;
 }
 .images{
     margin-bottom: 5%;
 }
 .images img {
-  width: 100px;
+  width: 10%;
   border: 1px solid #000;
 }
 
@@ -84,9 +90,9 @@ input[type="text"] {
 .parStyle {
   color: #75797a;
   font-family: ‘Verdana’, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 26px;
-  margin: 5px;
+  margin: 2% 5%;
 }
 .formWord{
     background-color: rgb(245, 245, 245);
@@ -140,4 +146,18 @@ input[type="text"] {
   .text_par_intro{
     border: solid 2px rgba(57, 153, 255, 0.314);
   }
+  .engImg{
+    display: flex;
+    flex-direction: column;
+  }
+  .engImg img{
+    width: 100%;
+  }
+  .cardAnat{
+    flex-direction: column;
+  }
+  .puzzle, .images, .parStyle{
+    display: none;
+  }
+
 }

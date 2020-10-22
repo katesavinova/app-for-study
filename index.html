@@ -470,10 +470,10 @@
       <div class="" style="margin: 20px;"></div>
 
       <section class="about_proj">
-        <div class="my-2 p-3 bg-white rounded shadow-sm">
+        <div class="my-2 p-4 bg-white rounded shadow" style="border-radius: 10px;">
           <h6
             class="border-bottom border-gray pb-2 mb-0" 
-            style="font-size: 20px;"
+            style="font-size: 24px; padding-left: 5%; color: rgba(57, 153, 255, 0.952);"
             _msthash="457847"
             _msttexthash="4276883"
           >
@@ -547,7 +547,7 @@
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static text_par_intro">
                   <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
-                  <h3 class="mb-0 h3Info h3red">Военное</h3>
+                  <h3 class="mb-0 h3Info h3gr">Военное</h3>
                   <p class="card-text mb-auto">Самая длинная битва Второй войны — за Атлантику, которая длилась 6л.</p>
                   <a href="#anatomi" class="stretched-link">Узнать больше</a>
                 </div>
@@ -561,7 +561,7 @@
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static text_par_intro">
                   <strong class="d-inline-block mb-2 text-primary">Предмет</strong>
-                  <h3 class="mb-0 h3Info h3e">Английский</h3>
+                  <h3 class="mb-0 h3Info h3bl">Английский</h3>
                   <p class="mb-auto">"Go!"- самое короткое грамм.верное предложение.</p>
                   <a href="#chemistry" class="stretched-link">Узнать больше</a>
                 </div>
@@ -594,36 +594,50 @@
             <div class="card-header" style="background-color: red;">
               <h4 class="my-0 font-weight-normal" style="color: white;">Анатомия</h4>
             </div>
-            <div class="card_info">
-              <img src="img/organ-anatomy.jpg" alt="organ-anatomy" width="60%"  style="margin: 0 15%;">
+            <div class="card_info ">
+             
               <div class="test" style="color: rgb(145, 145, 145);">
-                <form  name="quiz" class="quiz" id="quiz" action="javascript:check();">
-                 <div class="">
-                  <p class="my-0 font-weight-normal">Что изображено на картинке? </p>
-                  <img src="img/test_anatom.jpg" alt=""><br>
-                  <input name="vopros1" checked="checked" value="no" id="value1" type="radio"> Сонная артерия  <br>
-                  <input name="vopros1" value="yes" id="value2" type="radio"> Сердечная мышца <br>
-                  <input name="vopros1" value="no" id="value3" type="radio"> Поджелудочная железа <br>
-                  <input name="vopros1" value="nо" id="value4" type="radio"> Житавидная железа <br>
-                 </div>
+               
+                <form  name="quiz" class="quiz " id="quiz" action="javascript:check();">
+                  <div class="d-flex my-4 cardAnat">
+                    <div class="card my-4 p-3 shadow col-md-4 mr-2">
+                      <div class="card-body">
+                        <p class="my-0 font-weight-normal">Что изображено на картинке? </p>
+                        <img src="img/test_anatom.jpg" alt=""><br>
+                        <input name="vopros1" checked="checked" value="no" id="value1" type="radio"> Сонная артерия  <br>
+                        <input name="vopros1" value="yes" id="value2" type="radio"> Сердечная мышца <br>
+                        <input name="vopros1" value="no" id="value3" type="radio"> Поджелудочная железа <br>
+                        <input name="vopros1" value="nо" id="value4" type="radio"> Житавидная железа <br>
+                      </div>
+                    </div>
+                   
+                   <div class="card my-4 p-3 shadow col-md-4 mr-2">
+                    <div class="card-body">
+                      <div class=""> <p class="my-0 font-weight-normal"> Под какой цифрой обозначены ПОЧКИ?</p>
+                        <img src="img/test_anatom_2.png" alt=""><br>
+                        <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 
+                        <input name="vopros2" value="no" id="value2" type="radio"> 2 <br>
+                        <input name="vopros2" value="no" id="value3" type="radio">  3
+                        <input name="vopros2" value="yes" id="value4" type="radio">  4 
+                      </div>
+                    </div>
+                  </div>
+                    
+                   
+                  <div class="card my-4 p-3 shadow col-md-4">
+                    <div class="card-body">
+                      <p class="my-0 font-weight-normal">Чего из перечисленного нет на картинке?</p>
+                    <img src="img/test_anatom_3.jpg" alt=""><br>
+                    <input name="vopros3" checked="checked" value="no" id="value1" type="radio">Глаз <br>
+                    <input name="vopros3" value="yes" id="value2" type="radio">Сердце <br>
+                    <input name="vopros3" value="no" id="value3" type="radio"> Зуб <br>
+                    <input name="vopros3" value="nо" id="value4" type="radio"> Мозг <br>
+                    <br>
+                    </div>
+                  </div>
+                   <br>
                   
-                 <div class=""> <p class="my-0 font-weight-normal"> Под какой цифрой обозначены ПОЧКИ?</p>
-                  <img src="img/test_anatom_2.png" alt=""><br>
-                  <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 
-                  <input name="vopros2" value="no" id="value2" type="radio"> 2 <br>
-                  <input name="vopros2" value="no" id="value3" type="radio">  3
-                  <input name="vopros2" value="yes" id="value4" type="radio">  4 
                 </div>
-                  
-                 <div class="">
-                  <p class="my-0 font-weight-normal">Чего из перечисленного нет на картинке?</p>
-                  <img src="img/test_anatom_3.jpg" alt=""><br>
-                  <input name="vopros3" checked="checked" value="no" id="value1" type="radio">Глаз <br>
-                  <input name="vopros3" value="yes" id="value2" type="radio">Сердце <br>
-                  <input name="vopros3" value="no" id="value3" type="radio"> Зуб <br>
-                  <input name="vopros3" value="nо" id="value4" type="radio"> Мозг <br>
-                  <br>
-                
                   <input value="Проверить" type="submit" placeholder="Проверить" style="border: 2px solid  rgb(255, 0, 0); border-radius: 5px; margin: 0; width: 100%; background-color: rgba(255, 0, 0, 0.849);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;">
                 </div>
               </form>
@@ -637,39 +651,62 @@
           <div class="card-header">
             <h4 class="my-0 font-weight-normal" style="color: rgb(57, 153, 255);">Английский</h4>
           </div>
-            <div class="card_info">
-              <div class="puzzle">
-                <div class="rowP">
-                  <div class="col"></div>
-                  <div class="col"></div>
-                  <div class="col"></div>
-                  <div class="col"></div>
-                </div>
-            </div>
-            <p class="parStyle">Собери слово "дом" из фрагментов:</p>
-            <div class="images">
-                <img id="slice_0_0" draggable="true" src="img/slice_0_0.jpg">
-                <img id="slice_0_1" draggable="true" src="img/slice_0_1.jpg">
-                <img id="slice_0_2" draggable="true" src="img/slice_0_2.jpg">
-                <img id="slice_0_3" draggable="true" src="img/slice_0_3.jpg">
-            </div>
-
-           <div class="formWord">
-            <p class="parStyle">Как перевести слово "dog" на русский(в женском роде)?</p>
+         <div class="wordCard">
+          <p class="parStyle">Собери слова из фрагментов:</p>
+          <div class="card_info">
+            <div class="puzzle">
+              <div class="rowP">
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div> 
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div>
+                <div class="Acol shadow"></div>
+              </div>
+          </div>
+          <p class="text-muted ml-3">( Подсказка здесь есть слова "дом" и "сумка" и одна лишняя буква)</p>
+          
+          <div class="images ml-3">
+              <img id="slice_0_0" draggable="true" src="img/slice_0_0.jpg">
+              <img id="slice_0_1" draggable="true" src="img/slice_0_1.jpg">
+              <img id="slice_0_2" draggable="true" src="img/slice_0_2.jpg">
+              <img id="slice_0_3" draggable="true" src="img/slice_0_3.jpg">
+              <img id="slice_0_4" draggable="true" src="img/slice_0_0 — копия.jpg">
+              <img id="slice_0_5" draggable="true" src="img/slice_0_1 — копия.jpg">
+              <img id="slice_0_6" draggable="true" src="img/slice_0_2 — копия.jpg">
+              <img id="slice_0_7" draggable="true" src="img/slice_0_3 — копия.jpg">
+          </div>
+         </div>
+            
+           <div class="formWord shadow">
+             <div class="d-flex my-4 engImg">
+              <p class="parStyle col-md-6">Как перевести слово "dog" на русский(в женском роде)?</p>
+              <img src="/img/dog-eng.png" alt="" width="37%" height="20%">
+             </div>
             <form action="">
               <input type="text" id="EngWord" placeholder="Ваш ответ" />
-              <input type="button" onclick="Submit()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px; font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
+              <input type="button" class="btn btn-primary btn-lg active" onclick="Submit()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px; font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
             </form>
-            <p class="parStyle">Как перевести слово "cat" на русский(в женском роде)?</p>
+            <div class="d-flex my-4 engImg">
+              <p class="parStyle col-md-6">Как перевести слово "cat" на русский(в женском роде)?</p>
+              <img src="/img/cat-eng.png" alt="" width="30%" height="10%">
+             </div>
             <form action="">
               <input type="text" id="EngWord2" placeholder="Ваш ответ" />
               <input type="button" onclick="Submit2()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
             </form>
-            <p class="parStyle">Как перевести слово "red" на русский?</p>
+           
+            <div class="d-flex my-4 engImg">
+              <p class="parStyle col-md-6">Как перевести слово "cow" на русский?</p>
+              <img src="/img/cow_eng.png" alt="" width="30%" height="10%" >
+             </div>
             <form action="">
               <input type="text" id="EngWord3" placeholder="Ваш ответ" />
               <input type="button" onclick="Submit3()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
             </form>
+            <br>
            </div>
         </div>
       </section>
@@ -680,7 +717,43 @@
             <h4 class="my-0 font-weight-normal" style="color: #ffffff;">Химия</h4>
           </div>
           <div class="card_info">
-
+            <div class="card border border-warning my-3">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Special title treatment</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card border border-warning shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Правильная ли что...</h4>
+                  <p class="card-text">Буквой N - обозначается Азот?</p>
+                  <img src="/img/Azot-him.jpg" alt="mel" width="33%" height="25%"  class="my-2"><br>
+                  <button type="button" class="btn btn-success" onclick="Submit4()">Правильно</button>
+                  <button type="button" class="btn btn-danger" onclick="Submit5()">Ошибка</button>
+                </div>
+              </div>
+              <div class="card border border-warning shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Так ли что...</h4> 
+                  <p class="card-text">На картинке Медь?</p>
+                  <img src="/img/kisspng-chalk-promotional-merchandise-him.jpg" alt="mel" width="80%" height="44%"  class="my-2">
+                  <button type="button" class="btn btn-success" onclick="Submit5()">Правильно</button>
+                  <button type="button" class="btn btn-danger" onclick="Submit4()">Ошибка</button>
+                </div>
+              </div>
+              <div class="card border border-warning shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Правда ли что...</h4>
+                  <p class="card-text">На картинке формула Воды?</p>
+                  <img src="/img/H2O-himjpg.jpg" alt="mel" width="50%" height="30%" class="my-3"><br>
+                  <button type="button" class="btn btn-success" onclick="Submit4()">Правильно</button>
+                  <button type="button" class="btn btn-danger" onclick="Submit5()">Ошибка</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -757,7 +830,7 @@
         event.target.appendChild(document.getElementById(imageId));
       };
 
-      const cells = document.getElementsByClassName("col");
+      const cells = document.getElementsByClassName("Acol");
       Array.from(cells).forEach((element) => {
         element.addEventListener('dragover',dragover);
         element.addEventListener('drop',drop);
@@ -787,14 +860,24 @@
         }
       }
       function Submit3(){
-        if((document.getElementById('EngWord3').value)=="Красный") {
+        if((document.getElementById('EngWord3').value)=="Корова") {
           return alert("Верно!");
         }
         else{
           return alert("Ошибка!Попробуй еще раз.");
         }
+       
         
+      }
+      {
+        function Submit4(){
+          return alert("Верно!");
+          
+        }
         
+        function Submit5(){
+          return alert("Не верно!");
+        }
       }
     }
      </script>
