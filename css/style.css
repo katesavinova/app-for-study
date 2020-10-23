@@ -98,6 +98,17 @@ input[type="text"] {
     background-color: rgb(245, 245, 245);
     padding: 2%;   
 }
+.cardCick-bgFalse{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.cardCick-bgTrue{
+  background-color: rgba(0, 255, 64, 0.5);
+}
+.cardAnatBG{
+  background-color: rgb(245, 245, 245);
+  padding: 7% 1%;
+  margin: 0 0.1%;
+}
 /*mobile  version*/
 @media (max-width: 764px) {
   .top_mobilMEnu{
@@ -156,8 +167,19 @@ input[type="text"] {
   .cardAnat{
     flex-direction: column;
   }
-  .puzzle, .images, .parStyle{
+  .puzzle, .images, .parNone{
     display: none;
   }
-
+.media img{
+  width: 40%;
+}
+.media h5{
+  font-size: 30px;
+}
+.media p{
+  font-size: 12px;
+}
+.mediaMobil{
+  display: grid;
+}
 }
