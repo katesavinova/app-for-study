@@ -744,9 +744,41 @@
       </section>
 
      <section class="eng" id="eng">
+      
         <div class="card mb-4 shadow-sm" style="border-color: rgb(57, 153, 255);">
+          
           <div class="card-header">
             <h4 class="my-0 font-weight-normal" style="color: rgb(57, 153, 255);">Английский</h4>
+          </div>
+          <div class="cardsAnser">
+            <h3 class="m-4">Отгадай фрукт по описанию, у тебя будет 3 попытки</h3>
+            <div class="card-group m-4">
+              
+              <div class="card border border-primary">
+                <div class="card-body">
+                  <h4 class="card-title">Подсказка</h4>
+                  <div class="cardAnser_prompt"></div>
+                   </div>
+              </div>
+              <div class="card border border-primary">
+                <div class="card-body">
+                  <h4 class="card-title">Вопрос</h4>
+                  <div class="cardAnserText"></div>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="cardAnserBTN" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button" onclick="ClickAnser()">go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border border-primary">
+                <div class="card-body">
+                  <h4 class="card-title">Попытка</h4>
+                  <div class="cardAnser_try"></div>
+                   </div>
+              </div>
+            </div>
           </div>
          <div class="wordCard">
           <p class="parStyle parNone">Собери слова из фрагментов:</p>
@@ -776,7 +808,7 @@
               <img id="slice_0_7" draggable="true" src="img/slice_0_3 — копия.jpg">
           </div>
          </div>
-            
+           
            <div class="formWord shadow">
              <div class="d-flex my-4 engImg">
               <p class="parStyle col-md-6">Как перевести слово "dog" на русский(в женском роде)?</p>
@@ -799,12 +831,13 @@
               <p class="parStyle col-md-6">Как перевести слово "cow" на русский?</p>
               <img src="img/cow_eng.png" alt="" width="30%" height="10%" >
              </div>
-            <form action="">
-              <input type="text" id="EngWord3" placeholder="Ваш ответ" />
-              <input type="button" onclick="Submit3()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
-            </form>
-            <br>
+              <form action="">
+                <input type="text" id="EngWord3" placeholder="Ваш ответ" />
+                <input type="button" onclick="Submit3()" value="Проверить" style="border: 2px solid  rgb(57, 153, 255); min-width: 190px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 25%; background-color:rgba(57, 153, 255, 0.952);color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;"/>
+              </form>
+              <br>
            </div>
+           
         </div>
       </section>
 
@@ -884,125 +917,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function check()
-      {
-      var yes=0;
-      var no=0;
-      var otvet="";
-      var choice;
-      for (var v=1; v<=3; v++)
-      {
-      var q = document.forms['quiz'].elements['vopros'+v];
-       for (var i=0; i<q.length; i++)
-       {
-       if (q[i].checked) {
-       choice=q[i].value;
-       }
-       }
-       if (choice=="yes") {yes++;}
-       if (choice=="no") {no++;}
-      }
-      switch (true) {
-      case (yes<2): otvet="оценка 3";break;
-      case (yes==2): otvet="оценка 4";break;
-      case (yes>2): otvet="оценка 5";break;
-      default: otvet="очень плохо";break;
-      }
-      alert(otvet);
-      }
-      {
-      const dragstart = function(event) {
-        event.dataTransfer.setData("text", event.target.id);
-      };
-      const dragover = function(event) {
-        if(event.target.nodeName.toLowerCase() === "img") {
-          return true;
-        }
-        event.preventDefault();
-      }
-      const drop = function(event) {
-        event.preventDefault();
-        let imageId = event.dataTransfer.getData("text");
-        event.target.appendChild(document.getElementById(imageId));
-      };
-
-      const cells = document.getElementsByClassName("Acol");
-      Array.from(cells).forEach((element) => {
-        element.addEventListener('dragover',dragover);
-        element.addEventListener('drop',drop);
-      });      
-
-      const images = document.getElementsByTagName("img");
-      Array.from(images).forEach((element) => {
-        element.addEventListener('dragstart',dragstart);
-      });
-    }
-    {
-      function Submit(){
-        if((document.getElementById('EngWord').value)=="Собака") {
-          return alert("Верно!");
-        }
-        else{
-          return alert("Ошибка!Попробуй еще раз.");
-        }
-        
-      }
-      function Submit2(){
-        if((document.getElementById('EngWord2').value)=="Кошка") {
-          return alert("Верно!");
-        }
-        else{
-          return alert("Ошибка!Попробуй еще раз.");
-        }
-      }
-      function Submit3(){
-        if((document.getElementById('EngWord3').value)=="Корова") {
-          return alert("Верно!");
-        }
-        else{
-          return alert("Ошибка!Попробуй еще раз.");
-        }
-       
-        
-      }
-      {
-        function Submit4(){
-          return alert("Верно!");
-          
-        }
-        
-        function Submit5(){
-          return alert("Не верно!");
-        }
-      }
-      {
-        function SubmitFalse(){
-          document.getElementById('cardCick').classList.add('cardCick-bgFalse'); 
-          
-        }
-        
-        function SubmitTrue(){
-          document.getElementById('cardCick').classList.add('cardCick-bgTrue');
-        }
-        function SubmitFalse2(){
-          document.getElementById('cardCick2').classList.add('cardCick-bgFalse'); 
-          
-        }
-        
-        function SubmitTrue2(){
-          document.getElementById('cardCick2').classList.add('cardCick-bgTrue');
-        }
-        function SubmitFalse3(){
-          document.getElementById('cardCick3').classList.add('cardCick-bgFalse'); 
-          
-        }
-        
-        function SubmitTrue3(){
-          document.getElementById('cardCick3').classList.add('cardCick-bgTrue');
-        }
-      }
-    }
-     </script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
