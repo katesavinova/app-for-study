@@ -1,5 +1,5 @@
-let Anser = ['Orange','Banana','Cherry','Pear','Melon','Kiwi','Coconut','Lime','Mango','Peach'];
-let prompt=['Слово начинается с буквы - О'];
+let Anser = ['Orange','Banana','Cherry','Pear','Kiwi','Coconut','Lime','Mango'];
+let prompt=['Слово начинается с буквы - О','Monkeys like to eat it.','First word it is - C','Желтая лампочка висит','Зеленого цвета внутри','First word it is - C','очень кислый','First word it is - M'];
 let math=0, count=0, elem, elemText, articleDiv,elem1, elemText1, articleDiv1,elem2, elemText2, articleDiv2;
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -21,6 +21,94 @@ function getRandomIntInclusive(min, max) {
            
             break;
         
+            case 1:
+              articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+             // создаем элемент
+              elem = document.createElement("p");
+             // создаем для него текст
+              elemText = document.createTextNode("Он желтый снаружи и белый, мягкий внутри.");
+             // добавляем текст в элемент в качестве дочернего элемента
+             elem.appendChild(elemText);
+             // добавляем элемент в блок div
+             articleDiv.appendChild(elem);
+            
+             break;
+             case 2:
+              articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+             // создаем элемент
+              elem = document.createElement("p");
+             // создаем для него текст
+              elemText = document.createTextNode("Round, as ball, Red, as blood, Sweet, as honey.");
+             // добавляем текст в элемент в качестве дочернего элемента
+             elem.appendChild(elemText);
+             // добавляем элемент в блок div
+             articleDiv.appendChild(elem);
+            
+             break;
+         
+             case 3:
+               articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+              // создаем элемент
+               elem = document.createElement("p");
+              // создаем для него текст
+               elemText = document.createTextNode("This is looks like a lamp");
+              // добавляем текст в элемент в качестве дочернего элемента
+              elem.appendChild(elemText);
+              // добавляем элемент в блок div
+              articleDiv.appendChild(elem);
+             
+              break;
+              case 4:
+                articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+               // создаем элемент
+                elem = document.createElement("p");
+               // создаем для него текст
+                elemText = document.createTextNode("looks like a small tropic bird");
+               // добавляем текст в элемент в качестве дочернего элемента
+               elem.appendChild(elemText);
+               // добавляем элемент в блок div
+               articleDiv.appendChild(elem);
+              
+               break;
+           
+               case 5:
+                 articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+                // создаем элемент
+                 elem = document.createElement("p");
+                // создаем для него текст
+                 elemText = document.createTextNode("Round, is a hairy; inside-white; outside-brown.");
+                // добавляем текст в элемент в качестве дочернего элемента
+                elem.appendChild(elemText);
+                // добавляем элемент в блок div
+                articleDiv.appendChild(elem);
+               
+                break;
+                case 6:
+                 articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+                // создаем элемент
+                 elem = document.createElement("p");
+                // создаем для него текст
+                 elemText = document.createTextNode("Что можно назвать зеленым лимоном?");
+                // добавляем текст в элемент в качестве дочернего элемента
+                elem.appendChild(elemText);
+                // добавляем элемент в блок div
+                articleDiv.appendChild(elem);
+               
+                break;
+            
+                case 7:
+                  articleDiv = document.querySelector("div.cardAnserText");//куда помещаем
+                 // создаем элемент
+                  elem = document.createElement("p");
+                 // создаем для него текст
+                  elemText = document.createTextNode("This a long red or green fruit which is often seen in the joghurts");
+                 // добавляем текст в элемент в качестве дочернего элемента
+                 elem.appendChild(elemText);
+                 // добавляем элемент в блок div
+                 articleDiv.appendChild(elem);
+                
+                 break;
+                 
     }
     
     return math;
@@ -33,7 +121,7 @@ let num1 = document.getElementById('cardAnserBTN');
           console.log("yes");
           elemText.textContent='';
           alert("Верно!");
-          getRandomIntInclusive(0,1);
+          getRandomIntInclusive(0,7);
         }
         else{
             console.log("no");
@@ -73,10 +161,10 @@ let num1 = document.getElementById('cardAnserBTN');
             
             alert("Это был  "+Anser[math]);
             count=0;
-            getRandomIntInclusive(0,1);
+            getRandomIntInclusive(0,7);
            }
             
         }
       }
   }
-  getRandomIntInclusive(0,1);
+  getRandomIntInclusive(0,7);
