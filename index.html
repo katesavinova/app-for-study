@@ -31,7 +31,7 @@
       <div class="navbar-collapse collapse" id="navbarCollapse" style="">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="/index.html#anatomi">
+            <a class="nav-link active" href="#anatomi">
               <svg
                width="24"
                 height="24"
@@ -832,14 +832,41 @@
           </div>
           <div class="card_info">
             <div class="card border border-warning my-3">
-              <div class="card-header">
-                Featured
+              <div class="card-header text-warning">
+                Вещество | Виды веществ | Соединения
               </div>
-              <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <div class="card-body CardHim">
+                <h4 class="card-title"><strong>Вещество</strong> - форма материи определённого состава, состоящая из молекул, атомов, ионов.</h4>
+                <p class="card-text alert alert-warning"><strong>Молекула</strong> - самая маленькая частица конкретного вещества, сохраняющая его химические свойства.
+                  <br>
+                  <strong>Атом</strong> - самая маленькая частица, которую невозможно химически разделить.
+                  <br>
+                  <strong>Ион</strong> - электрически заряженный атом (группа атомов).
+                </p>
+                <p class="card-text text-secondary">Простыми называются вещества, состоящие из атомов только одного химического элемента.
+                  Примеры простых веществ:
+                  Fe
+                  C
+                  P
+                  O2
+                  O3
+                  Cl2
+                  N2 <br>
+                  Сложными называются вещества, в состав которых входит несколько различных химических элементов.
+                  Примеры сложных веществ:
+                  H2O
+                  H2SO4
+                  HCl
+                  CuSO4
+                  NaOH
+                  Fe2(SO4)3 <br>
+                  Сложные вещества еще называют химическими соединениями.</p>
+                
               </div>
             </div>
+            <a href="dictionary.html" class="leanMoreHim my-4 alert alert-warning">
+              Читать материал по теме "Вещества их виды и соединения"
+             </a>
             <div class="card-deck">
               <div class="card border border-warning shadow">
                 <div class="card-body">
@@ -868,17 +895,102 @@
                   <button type="button" class="btn btn-danger" onclick="Submit5()">Ошибка</button>
               </div>
             </div>
+            <div class="card_info m-0 mt-4">
+              <div class="card border border-warning ">
+                <div class="card-header text-warning">
+                  Вещество и его состояния
+                </div>
+                <div class="card-body CardHim">
+                  <h4 class="card-title">Твердое | Жидкое | Газообразное</h4>
+                  <p class="card-text alert alert-warning">
+                    <strong>Твердое состояние</strong> Частицы (молекулы) в твердом теле объединены в жесткую повторяющуюся конструкцию - 
+                    кристаллическую решетку. Частицы в кристаллической решетке совершают небольшие колебания 
+                    около центров равновесия. Твердое тело имеет форму и объем.
+                  </p>
+                  <p class="card-text text-secondary">Существуют некоторые вещества, которые из твердого состояния переходят 
+                    сразу в газообразное, минуя жидкую фазу. Такой процесс называется сублимацией или возгонкой.  <br>
+                    Так, например, ведет себя "сухой лед" (двуокись азота СО2). При его нагревании вы не увидите ни капли воды,
+                     - "сухой лед" будет как бы испаряться на глазах.
+                    Процесс, обратный сублимации (переход вещества из газа в твердое состояние), называется <strong>десублимация</strong>.</p>
+                  
+                </div>
+              </div>
+              <a href="dictionary.html" class="leanMoreHim m-3 alert alert-warning">
+                Читать материал по теме "Вещество и его состояния"
+               </a>
           </div>
         </div>
       </section>
 
       <section class="voen" id="voen">
-        <div class="card mb-4 shadow-sm card_voe" style="border-color: #00FF00;">
+        <div class="card  shadow-sm card_voe border border-success">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" style="color: #00FF00;">Военное дело</h4>
+            <h4 class="my-0 font-weight-normal text-success" >Военное дело</h4>
           </div>
+          
           <div class="card_info">
-
+            <div class="alert alert-success cardVoen_bg" role="alert">
+              <h4 class="alert-heading">Вооруженные силы российской федерации</h4>
+              Военная служба – это вид государственной службы, представляющий собой профессиональную служебную деятельность граждан государства на воинских должностях в вооружённых силах, других войсках, воинских 
+              (специальных) формированиях и органах, осуществляющих функции по обеспечению обороны и безопасности государства.
+              <div class="card_img_voen"></div>
+            </div>
+              
+              <div class="card-deck">
+                <div class="card border border-success shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">Ответь на вопрос</h4>
+                    <p class="card-text">Сколько звезд на погонах армейского капитана?</p>
+                  <br>
+                    <button type="button" class="btn btn-success" onclick="Submit4()">Четыре</button>
+                    <button type="button" class="btn btn-danger" onclick="Submit5()">Пять</button>
+                  </div>
+                </div>
+                <div class="card border border-success shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">Так ли что...</h4> 
+                    <p class="card-text">Что чаще всего военнослужащий получает вне наряд очереди?</p>
+                   
+                    <button type="button" class="btn btn-success" onclick="Submit4()">Правильно</button>
+                    <button type="button" class="btn btn-danger" onclick="Submit5()">Ошибка</button>
+                  </div>
+                </div>
+                <div class="card border border-success shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">Вопрос...</h4>
+                    <p class="card-text">Как называется головная часть боевого винтовочного или пистолетного патрона?</p>
+                    
+                    <button type="button" class="btn btn-success" onclick="Submit5()">Гильза</button>
+                    <button type="button" class="btn btn-danger" onclick="Submit4()">Пуля</button>
+                </div>
+              </div>
+          </div>
+        
+          <div class="card cardimgVoen my-0 border border-success mt-4 shadow shadow-sm">
+            <div class="card-body  alert-success">
+              <h5 class="card-text">Главной задачей военной службы является защита и оборона страны в случае внешней или внутренней угрозы.</h5>
+            </div>
+           <div class="imgVoen d-flex justify-content-center">
+           </div>
+            <div class="card-body">
+              <p class="card-text">Для защиты населения нашей страны, а также территориальной целостности Российской Федерации в случае проявления внутренних или внешних угроз была создана специальная государственная военная организация, 
+                которая предназначена для обороны и отражения агрессии. Это Вооружённые силы Российской Федерации.</p>
+            </div>
+          </div>
+           
+          <a href="dictionary.html" class="leanMoreVoen my-4 alert alert-success ">
+            Читать материал по теме "Вооруженные силы российской федерации"
+           </a>
+          <div class="card my-4 border border-success  shadow shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Что такое воинская обязанность?</h4>
+              <h6 class="card-subtitle mb-2 text-muted">обязанность...</h6>
+              <p class="card-text">
+                Воинская обязанность – это обязанность граждан страны нести военную службу в рядах 
+                вооружённых сил, а также право исполнять конституционный долг по защите Отечества.
+              </p>
+              <a href="dictionary.html" class="card-link">Узнать больше</a>
+            </div>
           </div>
         </div>
       </section>

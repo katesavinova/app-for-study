@@ -120,8 +120,13 @@ input[type="text"] {
 
 .cardFamily{
   background-image: url(../img/flowers-4931217_640.png);
-  background-color: rgb(245, 245, 245);
-
+  background-color: rgba(12, 31, 73, 0.678);
+}
+.CardHim{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .leanMore{
   display: flex;
@@ -135,12 +140,67 @@ input[type="text"] {
  font-weight: 800;
  letter-spacing: 2px;
 }
+.leanMoreHim{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../img/chemistry-3597820_640.png);
+  background-position: center;
+  background-size: 45%;
+  height: 100px;
+ font-size: 25px;
+ font-weight: 800;
+ letter-spacing: 2px;
+}
+
 .cardFamilyrow img{
   width: 55%;
   height: 70%;
 }
+.imgVoen{
+  width: 100%;
+  height: 150px;
+ background-image: url(../img/army-161605_640.png);
+  background-position: center;
+  background-size: 30%;
+}
+
+.cardVoen_bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  background-image: url(../img/leaves-5643327_640.png);
+  background-position: left;
+  background-size: cover;
+}
+.leanMoreVoen{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../img/camouflage-33708_640.png); 
+  background-position: center;
+  background-size: 53%;
+  opacity: 70%;
+  color: rgba(255, 255, 255);
+  background-repeat: inherit;
+  height: 100px;
+ font-size: 25px;
+ font-weight: 800;
+ letter-spacing: 2px;
+}
 /*mobile  version*/
 @media (max-width: 764px) {
+  h1, h2, h4{
+    font-size: 16px;
+  }
+  h5{
+    font-size: 12px;
+  }
+  .alert{
+    font-size: 9px;
+  }
   .top_mobilMEnu{
     display: flex;
     justify-content: space-between;
@@ -221,10 +281,61 @@ input[type="text"] {
   flex-direction: column;
   width: 85%;
 }
+.card{
+  font-size: 13px;
+}
+
 .leanMore{
   background-size: 55%;
   height: 80px;
  font-size: 14px;
+ font-weight: 800;
+ letter-spacing: 2px;
+}
+.leanMoreHim{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: 65%;
+  height: 60px;
+  width: 100%;
+ font-size: 9px;
+ font-weight: 800;
+ letter-spacing: 2px;
+}
+.imgVoen{
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/army-161605_640.png);
+  background-position: center;
+  background-size: cover;
+}
+.cardimgVoen{
+  height: 300px;
+  font-size: 8px;
+  padding-bottom: 5%;
+}
+.cardVoen_bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 160px;
+  background-image: url(../img/leaves-5643327_640.png);
+  background-position: right;
+  background-size: 120%;
+}
+.leanMoreVoen{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 80%;
+  background-image: url(../img/camouflage-33708_640.png); 
+  background-position: center;
+  background-size: 43%;
+  background-repeat: inherit;
+  height: 60px;
+ font-size: 10px;
  font-weight: 800;
  letter-spacing: 2px;
 }
