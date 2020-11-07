@@ -109,7 +109,7 @@
                 <line x1="12" y1="20" x2="12" y2="4"></line>
                 <line x1="6" y1="20" x2="6" y2="14"></line>
               </svg>
-              Социология
+              Чтение
             </a>
           </li>
           <li class="nav-item">
@@ -239,7 +239,7 @@
                 <line x1="12" y1="20" x2="12" y2="4"></line>
                 <line x1="6" y1="20" x2="6" y2="14"></line>
               </svg>
-              Социология
+              Чтение
             </a>
           </li>
           <li class="nav-item">
@@ -955,7 +955,7 @@
                 <div class="card border border-success shadow">
                   <div class="card-body">
                     <h4 class="card-title">Так ли что...</h4> 
-                    <p class="card-text">Что чаще всего военнослужащий получает вне наряд очереди?</p>
+                    <p class="card-text">Что чаще всего военнослужащий получает наряд вне очереди?</p>
                    
                     <button type="button" class="btn btn-success" onclick="Submit4()">Правильно</button>
                     <button type="button" class="btn btn-danger" onclick="Submit5()">Ошибка</button>
@@ -1000,7 +1000,122 @@
           </div>
         </div>
       </section>
-      
+      <section class="socil mt-4" id="socil">
+        <div class="card  shadow-sm card_voe border border-info">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal text-info" >Чтение</h4>
+          </div>
+          
+          <div class="card_info">
+            <div id="accordion" role="tablist">
+              <div class="card border border-info m-2 WRcard">
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed text-info">
+                      <strong>Фразеологизмы</strong> (нажми на меня)
+                    </a>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse text-info" role="tabpanel" aria-labelledby="headingOne" style="">
+                  <div class="card-body">
+                    это связанные, устойчивые сочетания двух и более слов, равные по значению слову. Например: сесть в лужу – попасть в неловкое смешное положение.
+                    Сесть в кресло, за стол – это не фразеологизм. <br>  Кот наплакал – очень мало
+                  </div>
+                </div>
+              </div>
+              <div class="card border border-info m-2">
+                <div class="card-header WRcard" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="text-info" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Объясни значение фразеологизма (крылатого выражения) одним словом.
+                    </a>
+                  </h5>
+                </div>
+                
+                <div id="collapseTwo" class="collapse show text-info " role="tabpanel" aria-labelledby="headingTwo" style="">
+                  <div class="card-body">
+                   
+                    <form action="">
+                      Кот наплакал - 
+                      <input type="text" id="socleWR" placeholder="Ваш ответ" />
+                      <input type="button" class="text-info" onclick="SubmitWR()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
+                    </form> <br>
+                    <form action="">
+                      Бить баклужи - 
+                      <input type="text" id="socleWR2" placeholder="Ваш ответ" />
+                      <input type="button" class="text-info" onclick="SubmitWR2()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
+                    </form> <br>
+                    <form action="">
+                     На краю света-
+                      <input type="text" id="socleWR3" placeholder="Ваш ответ" />
+                      <input type="button" class="text-info" onclick="SubmitWR3()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
+                    </form> <br>
+                  </div>
+                </div>
+              </div>
+              <a href="dictionary.html" class="leanMoreWR my-4 alert alert-info ">
+                Читать материал по теме "Фразеологизмы и пословицы"
+               </a>
+             <div class="d-flex WRcard my-4">
+              <div class="card  border border-info m-2">
+                <h3 class="card-header text-white bg-info">Выбери правильный ответ</h3>
+                <div class="card-body">
+                  <p class="card-text">Найди пословицу о труде:</p>
+                  <button type="button" class="btn btn-outline-info m-2" onclick="Submit5()">Своя земля и в горсти мила.</button>
+                    <button type="button" class="btn btn-outline-info m-2" onclick="Submit4()">Чтобы из ручья напиться, надо наклониться</button>
+                  <a href="#dictionary.html" class="btn btn-primary bg-info ml-2">Узнай больше</a>
+                </div>
+              </div>
+             
+              <div class="card  border border-info m-2">
+                <h3 class="card-header text-info">Выбери ответ</h3>
+                <div class="card-body text-gray-dark">
+                  <h4 class="card-title">В какой сказке один из персонажей — лиса?</h4>
+                  <button type="button" class="btn btn-outline-info m-2" onclick="Submit5()"> «Гуси — лебеди»</button>
+                  <button type="button" class="btn btn-outline-info m-2" onclick="Submit4()"> «Колобок»</button>
+                </div>
+              </div>
+             </div>
+            
+             <div class="card-deck">
+              <div class="card border border-info shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Ответь на вопрос</h4>
+                  <p class="card-text">Определи жанр произведения.
+                    Раз, два, три, четыре, пять,
+                    Будем в прятки мы играть.
+                    Звёзды, месяц, луг,цветы…
+                    Поводи пойди — ка ты!</p>
+                <br>
+                  <button type="button" class="btn btn-info" onclick="Submit4()">считалка</button>
+                  <button type="button" class="btn btn-danger" onclick="Submit5()">загадка</button>
+                </div>
+              </div>
+              <div class="card border border-info shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Ответь...</h4> 
+                  <p class="card-text">Что соответствует описанию осени?</p>
+                 
+                  <button type="button" class="btn btn-info m-2" onclick="Submit5()">Поспела в лесу земляника</button>
+                  <button type="button" class="btn btn-danger m-2" onclick="Submit4()"> Птицы собираются на юг  </button>
+                </div>
+              </div>
+              <div class="card border border-info shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Вопрос...</h4>
+                  <p class="card-text">Кого встретил Дядя Фёдор, когда ел «неправильный» бутерброд?</p>
+                  
+                  <button type="button" class="btn btn-info" onclick="Submit5()">Шарика</button>
+                  <button type="button" class="btn btn-danger" onclick="Submit4()">Матроскина</button>
+              </div>
+            </div>
+        </div>
+        
+            </div>
+            
+        </div>
+      </section>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

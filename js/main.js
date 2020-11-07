@@ -77,7 +77,30 @@ function check()
           return alert("Ошибка!Попробуй еще раз.");
         }
        
-        
+      }
+      function SubmitWR(){
+        if((document.getElementById('socleWR').value)=="Мало") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
+      }
+      function SubmitWR2(){
+        if((document.getElementById('socleWR2').value)=="Бездельничать") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
+      }
+      function SubmitWR3(){
+        if((document.getElementById('socleWR3').value)=="Далеко") {
+          return alert("Верно!");
+        }
+        else{
+          return alert("Ошибка!Попробуй еще раз.");
+        }
       }
       {
         function Submit4(){
