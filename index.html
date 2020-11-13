@@ -998,6 +998,55 @@
               <a href="dictionary.html" class="card-link">Узнать больше</a>
             </div>
           </div>
+          <a href="dictionary.html" class="leanMoreVoen my-4 alert alert-success ">
+            Читать материал по теме "Разновидности экипажей танков"
+           </a>
+          <div class="test " style="color: rgb(145, 145, 145);">
+               
+            <form  name="quiz" class="quiz2 " id="quiz2" action="javascript:check2();">
+              <div class="d-flex m-4 cardAnat testmb">
+                <div class="card shadow col-md-4 mr-2 border-success">
+                  <div class="card-body">
+                    <p class="my-0 font-weight-normal  text-success">В какой последовательности из цветов состоит флаг Российской Федерации?</p>
+                   
+                    <input name="vopros1" checked="checked" value="no" id="value1" type="radio">  Синий, белый, красный <br>
+                    <input name="vopros1" value="yes" id="value2" type="radio"> Белый, синий, красный <br>
+                    <input name="vopros1" value="no" id="value3" type="radio"> Синий, красный, белый <br>
+                    <input name="vopros1" value="nо" id="value4" type="radio"> Белый, красный, синий <br>
+                  </div>
+                </div>
+               
+               <div class="card shadow col-md-4 mr-2 border-success">
+                <div class="card-body">
+                  <div class=""> <p class="my-0 font-weight-normal text-success"> Сколько человек находится в экипаже танка Т-34?</p>
+                   
+                    <input name="vopros2" checked="checked" value="no" id="value1" type="radio">  1 
+                    <input name="vopros2" value="no" id="value2" type="radio"> 2 <br>
+                    <input name="vopros2" value="no" id="value3" type="radio">  3
+                    <input name="vopros2" value="yes" id="value4" type="radio">  4 
+                  </div>
+                </div>
+              </div>
+                
+               
+              <div class="card shadow col-md-4 border-success">
+                <div class="card-body">
+                  <p class="my-0 font-weight-normal  text-success">Количество человек в экипаже самоходной гаубицы 2С3 «Акация» ?</p>
+               
+                <input name="vopros3" checked="checked" value="no" id="value1" type="radio">3 <br>
+                <input name="vopros3" value="yes" id="value2" type="radio">4 <br>
+                <input name="vopros3" value="no" id="value3" type="radio"> 5 <br>
+                <input name="vopros3" value="nо" id="value4" type="radio"> 6 <br>
+                <br>
+                </div>
+              </div>
+               <br>
+              
+            </div>
+              <input value="Проверить" class="border-success bg-success" type="submit" placeholder="Проверить" style=" border-radius: 5px; margin: 0; width: 100%;color: rgb(226, 226, 226); padding: 10px 15px; box-shadow: 0px 3px 0px ;">
+           
+          </form>
+        </div>
         </div>
       </section>
       <section class="socil mt-4" id="socil">
@@ -1007,8 +1056,9 @@
           </div>
           
           <div class="card_info">
-            <div id="accordion" role="tablist">
-              <div class="card border border-info m-2 WRcard">
+       
+            <div id="accordion" role="tablist" class="">
+              <div class="card border border-info m-2 WRcard ">
                 <div class="card-header" role="tab" id="headingOne">
                   <h5 class="mb-0">
                     <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed text-info">
@@ -1018,14 +1068,14 @@
                 </div>
             
                 <div id="collapseOne" class="collapse text-info" role="tabpanel" aria-labelledby="headingOne" style="">
-                  <div class="card-body">
+                  <div class="card-body ">
                     это связанные, устойчивые сочетания двух и более слов, равные по значению слову. Например: сесть в лужу – попасть в неловкое смешное положение.
                     Сесть в кресло, за стол – это не фразеологизм. <br>  Кот наплакал – очень мало
                   </div>
                 </div>
               </div>
-              <div class="card border border-info m-2">
-                <div class="card-header WRcard" role="tab" id="headingTwo">
+              <div class="card border border-info m-2 ">
+                <div class="card-header " role="tab" id="headingTwo">
                   <h5 class="mb-0">
                     <a class="text-info" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                       Объясни значение фразеологизма (крылатого выражения) одним словом.
@@ -1033,29 +1083,56 @@
                   </h5>
                 </div>
                 
-                <div id="collapseTwo" class="collapse show text-info " role="tabpanel" aria-labelledby="headingTwo" style="">
-                  <div class="card-body">
+                <div id="collapseTwo" class="collapse show text-info" role="tabpanel" aria-labelledby="headingTwo" style="">
+                  <div class="card-body ">
                    
-                    <form action="">
+                    <form action="" class="">
                       Кот наплакал - 
-                      <input type="text" id="socleWR" placeholder="Ваш ответ" class="btnWR" />
+                      <div class="formWr">
+                        <input type="text" id="socleWR" placeholder="Ваш ответ" class="btnWR" />
                       <input type="button" class="text-info" onclick="SubmitWR()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
+                      </div>
                     </form> <br>
                     <form action="">
                       Бить баклужи - 
+                      <div class="formWr">
                       <input type="text" id="socleWR2" placeholder="Ваш ответ" class="btnWR" />
                       <input type="button" class="text-info" onclick="SubmitWR2()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
+                    </div>
                     </form> <br>
                     <form action="">
                      На краю света-
+                     <div class="formWr">
                       <input type="text" id="socleWR3" placeholder="Ваш ответ" class="btnWR" />
                       <input type="button" class="text-info btnSub" onclick="SubmitWR3()" value="Go" style="border: 1px solid  rgb(184, 185, 185); min-width: 100px;  font-size: 20px; border-radius: 5px; margin: 0 1%; width: 10%;color: rgb(226, 226, 226); padding:10px 15px; box-shadow: 0px 3px 0px ;"/>
-                    </form> <br>
+                   </div>
+                   </form> <br>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="dictionary.html" class="leanMoreWR my-4 alert alert-info ">
+                Читать материал по теме "Фразеологизмы"
+               </a>
+              <div class="d-flex WRcard mt-4">
+                <div class="card  border border-info">
+                  <h3 class="card-header text-white bg-info">Выбери правильный ответ, прочитав фрагмент текста</h3>
+                  <div class="card-body">
+                    <div class="cardWrIMG"> </div>
+                    <p class="card-text">В библиотеке «Детский День». Сумчатый Крот читает вслух собравшимся зверятам. Он прочитал им следующую притчу:
+                      Две сохи
+                      В кузнице отремонтировали две сохи. Они выглядели одинаково. Одна из них осталась стоять в углу сарая. Её жизнь была легче, чем жизнь другой сохи, которую крестьянин на следующее утро погрузил на телегу и привёз на поле. Там она стала красивой и блестящей. Когда обе сохи вновь встретились в сарае, они с удивлением посмотрели друг на друга. Соха, которую не употребляли в дело, была покрыта ржавчиной. С завистью она смотрела на блестящую подругу:
+                      — Скажи, как ты стала такой красивой? Ведь мне так хорошо было в тишине сарая стоять в своём углу.
+                      — Это безделье тебя изувечило, а я стала красивой от труда. <strong>
+                      Помоги Кроту сформулировать мораль (основную мысль) этой истории. (выбери правильный ответ)</strong></p>
+                    <button type="button" class="btn btn-outline-info m-2 " onclick="Submit5()">Без труда не вытащишь и рыбку из пруда</button>
+                      <button type="button" class="btn btn-outline-info m-2" onclick="Submit4()">Землю солнце красит, а человека – труд</button>
+                  
                   </div>
                 </div>
               </div>
               <a href="dictionary.html" class="leanMoreWR my-4 alert alert-info ">
-                Читать материал по теме "Фразеологизмы и пословицы"
+                Читать материал по теме "Пословицы"
                </a>
              <div class="d-flex WRcard my-4">
               <div class="card  border border-info m-2">
@@ -1077,7 +1154,7 @@
                 </div>
               </div>
              </div>
-            
+             <div class="cardImgWr"></div>
              <div class="card-deck">
               <div class="card border border-info shadow">
                 <div class="card-body">
@@ -1110,9 +1187,9 @@
                   <button type="button" class="btn btn-danger" onclick="Submit4()">Матроскина</button>
               </div>
             </div>
+            
         </div>
-        
-            </div>
+       
             
         </div>
       </section>

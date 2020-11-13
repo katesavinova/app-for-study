@@ -51,6 +51,59 @@ function check()
         element.addEventListener('dragstart',dragstart);
       });
     }
+    function check2()
+      {
+      var yes=0;
+      var no=0;
+      var otvet="";
+      var choice;
+      for (var v=1; v<=3; v++)
+      {
+      var q = document.forms['quiz2'].elements['vopros'+v];
+       for (var i=0; i<q.length; i++)
+       {
+       if (q[i].checked) {
+       choice=q[i].value;
+       }
+       }
+       if (choice=="yes") {yes++;}
+       if (choice=="no") {no++;}
+      }
+      switch (true) {
+      case (yes<2): otvet="оценка 3";break;
+      case (yes==2): otvet="оценка 4";break;
+      case (yes>2): otvet="оценка 5";break;
+      default: otvet="очень плохо";break;
+      }
+      alert(otvet);
+      }
+      {
+      const dragstart = function(event) {
+        event.dataTransfer.setData("text", event.target.id);
+      };
+      const dragover = function(event) {
+        if(event.target.nodeName.toLowerCase() === "img") {
+          return true;
+        }
+        event.preventDefault();
+      }
+      const drop = function(event) {
+        event.preventDefault();
+        let imageId = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(imageId));
+      };
+
+      const cells = document.getElementsByClassName("Acol");
+      Array.from(cells).forEach((element) => {
+        element.addEventListener('dragover',dragover);
+        element.addEventListener('drop',drop);
+      });      
+
+      const images = document.getElementsByTagName("img");
+      Array.from(images).forEach((element) => {
+        element.addEventListener('dragstart',dragstart);
+      });
+    }
     {
       function Submit(){
         if((document.getElementById('EngWord').value)=="Собака") {
